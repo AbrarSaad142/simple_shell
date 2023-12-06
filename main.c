@@ -8,5 +8,7 @@
  */
 int main(int ac, char **argv)
 {
+char *prompt = "(Ashell)$";
+printf("%s", prompt);
 return (0);
 }
