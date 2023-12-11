@@ -29,6 +29,9 @@ token = strtok(NULL, " ");
 }
 //Last element is set to null for execvp function
 args[i] = NULL;
+//adding exit command
+if(strcmp(args[0], "exit") == 0{
+	break;}
 //check if command exists in PATH
 if(access(args[0], X_OK) == -1) {
 printf("ERROR!");
