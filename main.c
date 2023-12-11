@@ -6,7 +6,6 @@
  * @argv: is an array of character pointers listing all the arguments.
  * Return: Always 0 (Success)
  */
-#include "main.h"
 
 int main(int ac, char **argv)
 {
