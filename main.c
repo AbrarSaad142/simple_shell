@@ -17,6 +17,7 @@ int main(int ac, char **argv)
     int num_tokens = 0;
     char *token;
     int i;
+    extern char **environ;
 
     /* declaring void variables */
     (void)ac;
@@ -73,9 +74,18 @@ int main(int ac, char **argv)
             printf("Exiting the shell.\n");
             break;
         }
+         else if (strcmp(argv[0], "env") == 0) {
+            /*Print the current environment*/ 
+            char **env = environ;
+            while (*env != NULL) {
+                printf("%s\n", *env);
+                env++;
+            }
+        } else {
 
         /* execute the command */
         execmd(argv);
+        }
     }
 
     /* free up allocated memory */
