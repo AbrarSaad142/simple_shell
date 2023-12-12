@@ -68,6 +68,11 @@ int main(int ac, char **argv)
             token = strtok(NULL, delim);
         }
         argv[i] = NULL;
+          /*Check for the exit command*/ 
+        if (strcmp(argv[0], "exit") == 0) {
+            printf("Exiting the shell.\n");
+            break;
+        }
 
         /* execute the command */
         execmd(argv);
