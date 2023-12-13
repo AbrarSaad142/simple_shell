@@ -11,5 +11,5 @@
 
 void execmd(char **argv);
 char *get_location(char *command);
-
+void free_enviroment(char **envo);
 #endif
