@@ -9,8 +9,8 @@ void create_enviroment(char **envrot)
 {
 	int i;
 
-	for (i = 0; environ[i]; i++)
-		envrot[i] = _strdup(environ[i]);
+	for (i = 0; envirom[i]; i++)
+		envrot[i] = _strdup(envirom[i]);
 		envrot[i] = NULL;
 }
 
