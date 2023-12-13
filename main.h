@@ -8,11 +8,12 @@
 #include <sys/stat.h>
 #include <unistd.h>
 #include <sys/wait.h>
+extern char **environ;
 
 void execmd(char **argv);
 char *get_location(char *command);
-char *_strdup(char *str);
-void free_enviroment(char **envo);
-void create_enviroment(char **envrot);
-extern char **envirom;
+void exitShell(char **argv);
+void environment(char **argv);
+int validate_command(char **lineptr, size_t *n, char **lineptr_copy);
+
 #endif

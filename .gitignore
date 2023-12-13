@@ -1,2 +1,5 @@
 .vscode/
 .dist/
+simpleshell
+*.swp
+hsh
