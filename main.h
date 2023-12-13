@@ -11,6 +11,7 @@
 
 void execmd(char **argv);
 char *get_location(char *command);
+char *_strdup(char *str);
 void free_enviroment(char **envo);
 void create_enviroment(char **envrot);
 extern char **envirom;
