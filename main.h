@@ -15,5 +15,6 @@ char *get_location(char *command);
 void exitShell(char **argv);
 void environment(char **argv);
 int validate_command(char **lineptr, size_t *n, char **lineptr_copy);
+int _putchar(char c);
 
 #endif
