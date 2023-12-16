@@ -1,11 +1,11 @@
 #include "main.h"
 /**
-* validate_command - validate command
-* @lineptr:command line.
-* @lineptr_copy: copy command line.
-* @n: iteration.
-* Return: return int.
-*/
+ * validate_command - validate command
+ * @lineptr:command line.
+ * @lineptr_copy: copy command line.
+ * @n: iteration.
+ * Return: return int.
+ */
 int validate_command(char **lineptr, size_t *n, char **lineptr_copy)
 {
 	char *prompt = "$ ";

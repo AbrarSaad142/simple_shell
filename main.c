@@ -40,7 +40,7 @@ int main(int ac, char **argv)
 		exitShell(argv);
 		environment(argv);
 		execmd(argv);
-		}
+	}
 	free(lineptr_copy);
 	free(lineptr);
 	return (0);
